@@ -2,7 +2,8 @@
 #include <time.h>
 using namespace std;
 
-int main(){
+int main()
+{
     int N;
     cout << "N = ";
     cin >> N;
@@ -10,7 +11,6 @@ int main(){
     int count = 0;
 
     clock_t start = clock(); // start
-
 
     for (int i = 0; i < N; ++i)
     {
@@ -25,6 +25,6 @@ int main(){
 
     clock_t end = clock(); // end
 
-
-    cout << "N = " << N << "\t" << "time = " << (double)(end - start) / CLOCKS_PER_SEC << " sec." << endl; //秒に変換したい場合は、「CLOCKS_PER_SEC」で割る。
+    cout << "N = " << N << "\t"
+         << "time = " << (double)(end - start) / CLOCKS_PER_SEC << " sec." << endl; //秒に変換したい場合は、「CLOCKS_PER_SEC」で割る。
 }
