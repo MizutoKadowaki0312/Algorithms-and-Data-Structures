@@ -13,4 +13,4 @@ function is_prime(N)
     end
 end
 
-is_prime(71)
+@time is_prime(71919919)
