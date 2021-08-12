@@ -1,18 +1,17 @@
-N = 5
-W = 10
-A = [1,2,4,5,11]
+W = 77
+
+# A = [1,2,4,5,11]
+A = [1,4,8,64,3,4,5]
 
 exist = false
 
-for bit in 0:(1 << N)
+for bit  in 0:(1 << length(A))
     sum = 0
-
-    for i in 1:N
-        if bit & (1 << i)
+    for i in 1:length(A)
+        if bit & (1 << i) != 0
             sum += A[i]
         end
     end
-
     if sum == W
         exist = true
     end
