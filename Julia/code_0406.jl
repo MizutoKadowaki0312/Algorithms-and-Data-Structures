@@ -19,4 +19,4 @@ function fibo(N)
 end
 
 
-fibo(6)
+fibo(20)
