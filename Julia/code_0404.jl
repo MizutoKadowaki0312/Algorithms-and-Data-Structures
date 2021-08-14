@@ -6,4 +6,4 @@ function GCD(m, n)
     end
 end
 
-GCD(36,12)
+GCD(51,15)
