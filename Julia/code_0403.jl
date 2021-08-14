@@ -3,6 +3,7 @@ function rec(N)
         return 0
     end
     result = N + rec(N + 1)
+    @show result
 end
 
 rec(5)
