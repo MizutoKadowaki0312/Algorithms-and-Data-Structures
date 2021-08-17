@@ -35,12 +35,10 @@ int main()
     cout << "N = ";
     cin >> N;
 
-    //計測開始
     clock_t start = clock();
 
     fibo(N);
 
-    //計測終了
     clock_t end = clock();
 
     cout << "N = " << N << "\t"
