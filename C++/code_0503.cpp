@@ -43,5 +43,10 @@ int main()
     }
 
     //答え
-    cout << dp[N - 1] << endl;
+    //cout << dp[N - 1] << endl;
+
+    for (int i = 0; i < N; i++)
+    {
+        cout << "dp[" << i << "] = " << dp[i] << endl;
+    }
 }
