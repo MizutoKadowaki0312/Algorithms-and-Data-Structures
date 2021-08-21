@@ -36,14 +36,23 @@ int main()
     //ループ
     for (int i = 0; i < N; i++)
     {
+        //cout << "i = " << i << endl;
+
         //一旦ここで処理がある
         chmin(dp[i], dp[i - 1] + abs(h[i] - h[i - 1]));
+
+        //cout << "dp[" << i << "] = " << dp[i] << endl;
+
         // i > 1の時，以下の処理もする．
         // 配列dpが配列外参照を起こさないようにする．
         if (i > 1)
         {
             chmin(dp[i], dp[i - 2] + abs(h[i] - h[i - 2]));
+            //cout << "dp[" << i << "] = " << dp[i] << endl;
         }
+        //cout << "dp[" << i << "] = " << dp[i] << endl;
+
+        //cout << "-----" << endl;
     }
 
     //答え
