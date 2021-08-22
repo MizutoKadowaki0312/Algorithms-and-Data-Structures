@@ -34,7 +34,7 @@ int main()
     dp[0] = 0;
 
     //ループ
-    for (int i = 0; i < N; i++)
+    for (int i = 1; i < N; i++)
     {
         //cout << "i = " << i << endl;
 
